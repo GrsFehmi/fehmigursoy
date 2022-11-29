@@ -225,7 +225,9 @@ width: 332px;
   opacity: 0.4;
 }
 
-
+.instagram-icon,.github-icon,.linkedin-icon{
+  width: 36;
+}
 
 /* İletişim Bitiş */
 
@@ -321,6 +323,9 @@ width: 332px;
     /* Yeteneklerim Bitiş */
 
 
-
+/* İletişim */
+  .instagram-icon,.github-icon,.linkedin-icon{
+  width: 24px;
+}
   
 }
