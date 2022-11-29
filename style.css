@@ -1,0 +1,326 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  list-style-type:none;
+  background-color: #1a172c;
+  color: white;
+}
+
+ /* Navbar Başlangıc */
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar li{
+    padding: 20px;
+      list-style-type: none;
+  }
+  .end {
+    margin-right: 150px;
+  }
+
+.navbar a {
+  color: white;
+  opacity: 0.5;
+}
+  a:hover {
+  color: white;
+  opacity: 1;
+  transition: all 0.5s;
+  }
+
+navbar a {
+  text-decoration:none;
+}
+
+.navbar {
+  display: flex;
+}
+  /* Navbar Bitiş */
+
+
+
+
+/* Main Başlangıç */
+
+.main-image{
+  width: 700px;
+}
+
+.main-container {
+  width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+  .text-container{
+      dislay: grid;
+      grid-column-start: 2;
+      grid-column-end: 2;
+    }
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+
+  .name-surname{
+    font-weight: bold;
+    font-size: 70px;
+    opacity: 0.4;
+  } 
+
+  .full-stack {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.4;
+  }
+
+hr{
+  opacity: 0.4;
+}
+
+/* Main Bitiş *:-moz-any-link
+
+
+/* Yeteneklerim Başlangıç */
+
+.ability-container{
+   width: 1000px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: center;
+  margin-top: 10px;
+  grid-gap: 10px;
+}
+
+.title-container{
+  opacity: 0.4;
+}
+
+.html-container,.css-container,.python-container{
+width: 332px;
+    height: 54px;
+    background: #2d2030;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+  transition: all 0.5s;
+}
+
+.c-container,.aurdino-container{
+     width: 332px;
+    height: 54px;
+    background: #2d2030;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+      text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+  }
+
+.html-container:hover, .css-container:hover, .python-container:hover, .c-container:hover, .aurdino-container:hover{
+ background: rgba(45,32,64,255);
+}
+
+/* Yeteneklerim Bitiş */
+
+
+
+/* Hakkımda Başlangıç */
+.about-container{
+    height: 100%;
+  margin-top: 150px;
+  }
+
+  .about-text-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+.about-title {
+  opacity: 0.4;
+}
+
+.about-text-justify{
+  display: flex;
+  justify-content: center;
+}
+
+/* Hakkımda Bitiş */
+
+
+/* İletişim Başlangıç */
+
+
+.contact-container{
+    width: 100%;
+    height: 100%;
+  margin-top: 150px;
+  }
+  .contact-mail{
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-text-container{
+    margin-top: 50px;
+  }
+
+  .mailto{
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+   .follow-me{
+     font-size: 20px;
+         margin-bottom: 20px;
+   }
+
+  .follow{
+    margin-top:50px;
+    }
+  .contact-mail:hover{
+     color:  #e0b0ff;
+  }
+.justify-space{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+  .instagram-icon, .github-icon,.linkedin-icon{
+    opacity: 0.5;
+  }
+
+  .instagram-icon:hover, .github-icon:hover, .linkedin-icon:hover{
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+.contact-title{
+  opacity: 0.4;
+}
+
+
+
+/* İletişim Bitiş */
+
+
+
+
+@media screen and (max-width: 1024px){
+.navbar {
+    display: none;
+  }
+
+  /* Main Başlangıç*/
+.main-image{
+  width: 450px;
+}
+
+  .main-container {
+  display: flex;
+    flex-direction: row;
+}
+
+    .name-surname{
+    font-size: 40px;
+  }
+
+   .full-stack {
+    font-size: 20px;
+  }
+
+  /* Main Bitiş*/
+
+   /* Yeteneklerim Başlangıç */
+
+.ability-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+}
+
+  .html-container,.css-container,.python-container,.c-container,.aurdino-container{
+     width: 80%;
+    height: 54px;
+  }
+
+/* Yeteneklerim Bitiş */
+}
+
+
+
+
+@media screen and (max-width: 500px){
+/* Main Başlangıç*/
+
+  .navbar{
+    display: none;
+  }
+.main-image{
+  width: 400px;
+}
+
+  .main-container {
+  display: flex;
+    flex-direction: column;
+}
+
+    .name-surname{
+    font-size: 40px;
+  }
+
+   .full-stack {
+    font-size: 20px;
+  }
+
+  /* Main Bitiş*/
+
+  
+
+
+  /* Yeteneklerim Başlangıç */
+
+
+.ability-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+   .html-container,.css-container,.python-container,.c-container,.aurdino-container{
+     width: 80%;
+    height: 54px;
+  }
+
+    /* Yeteneklerim Bitiş */
+
+
+
+  
+}
